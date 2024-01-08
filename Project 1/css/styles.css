@@ -25,3 +25,17 @@ body{
 .title span{
     font-size: 2rem;
 }
+
+.container{
+    width: 120rem;
+    margin: 0 auto;
+
+}
+
+.nav-bg{
+    background-color: var(--secondary);
+}
+
+.navigation-main{
+    
+}
