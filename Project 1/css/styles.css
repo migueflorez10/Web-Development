@@ -27,7 +27,7 @@ body{
 }
 
 .container{
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 
 }
@@ -37,5 +37,30 @@ body{
 }
 
 .navigation-main{
-    
+    display: flex;
+    flex-direction: column;
 }
+
+@media (min-width: 768px) {
+    .navigation-main{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navigation-main a { 
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+
+}
+
+.navigation-main a:hover{
+    background-color: var(--primary);
+    color: var(--dark);
+}
+
