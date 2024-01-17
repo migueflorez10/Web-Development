@@ -113,6 +113,7 @@ img{
     
 }
 
+
 .logo__nombre {
     font-weight: 400;
 }
@@ -166,6 +167,11 @@ img{
     text-align: center;
     font-weight: 700;
     margin-bottom: 2rem;
+    border: none;
+}
+
+.boton:hover {
+    cursor: pointer; 
 }
 
 @media (min-width: 768px) {
@@ -255,4 +261,45 @@ ul.Cursos li {
 .curso__label,
 .curso__info{
     font-size: 2rem;
+}
+
+.contacto-bg {
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.formulario{
+    margin-top: 30rem;
+    background-color: var(--blanco);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+    gap: 2rem;
+
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+
+}
+
+.campo__field{
+    flex: 1;
+    border: 1px solid var(--gris);
+}
+
+.campo__field--textarea{
+    height: 20rem;
+}
+
+.boton-_primario{
+    background-color: #000000;
 }

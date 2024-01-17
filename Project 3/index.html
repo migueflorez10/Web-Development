@@ -11,7 +11,16 @@
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap');
     </style>
 
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font" >
+
     <link rel="stylesheet" href="/Project 3/css/styles.css">
+
+    <link rel="preload" href="./img/blog1.jpg" as="image">
+    <link rel="preload" href="./img/blog2.jpg" as="image">
+    <link rel="preload" href="./img/blog3.jpg" as="image">
+
+    <!--prefetch-->
+    <link rel="prefetch" href="nosotros.html" as="document">
 
 </head>
 <body>
@@ -19,7 +28,7 @@
 
         <div class="contenedor">
             <div class="barra">
-                <a class="logo" Chref="index.html">
+                <a class="logo" href="/Project 3/index.html">
                     <h1 class="logo__nombre no-margin centrar-texto">Blog<span class="logo__bold">DeCafe</span></h1>
                 </a>
 
@@ -43,7 +52,7 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="./img/blog1.jpg" alt="Imgen Blog">
+                    <img loading="lazy" src="./img/blog1.jpg" alt="Imgen Blog">
                 </div>
 
                 <div class="entrada__contenido">
@@ -55,7 +64,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="./img/blog2.jpg" alt="Imgen Blog">
+                    <picture>
+                        <source srcset="./img/blog3.jpg" type="image/webp">
+                    </picture>
+                    <img loading="lazy" src="./img/blog2.jpg" alt="Imgen Blog">
                 </div>
 
                 <div class="entrada__contenido">
@@ -67,7 +79,7 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="./img/blog3.jpg" alt="Imgen Blog">
+                    <img loading="lazy" src="./img/blog3.jpg" alt="Imgen Blog">
                 </div>
 
                 <div class="entrada__contenido">
