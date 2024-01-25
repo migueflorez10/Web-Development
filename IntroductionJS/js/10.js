@@ -22,3 +22,4 @@ producto.imagen = "imagen.jpg"; // se puede agregar propiedades al objeto
 delete producto.disponible; // se puede eliminar propiedades del objeto
 
 console.log(producto);
+
